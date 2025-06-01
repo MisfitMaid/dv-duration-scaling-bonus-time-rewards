@@ -1,9 +1,9 @@
 {
 	"Releases": [
 		{
-			"Id": "MOD_NAME",
-			"Version": "1.0.0",
-			"DownloadUrl": "https://github.com/OWNER/REPOSITORY/releases/download/TAG/FILE_NAME.zip"
+			"Id": "ScalingBonusRewards",
+			"Version": "0.1",
+			"DownloadUrl": "https://github.com/MisfitMaid/dv-duratrion-scaling-bonus-time-rewards/releases/download/v0.1/ScalingBonusRewards_v0.1.zip"
 		}
 	]
 }

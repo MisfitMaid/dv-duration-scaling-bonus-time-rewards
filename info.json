@@ -1,6 +1,6 @@
 {
 	"Id": "ScalingBonusRewards",
-	"Version": "1.0.0",
+	"Version": "0.1",
 	"DisplayName": "ScalingBonusRewards",
 	"Author": "MisfitMaid",
 	"EntryMethod": "ScalingBonusRewards.Main.Load",
