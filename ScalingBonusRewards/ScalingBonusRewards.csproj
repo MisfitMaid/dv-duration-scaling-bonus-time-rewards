@@ -13,6 +13,9 @@
 		<Reference Include="DV.ThingTypes">
 		  <HintPath>I:\SteamLibrary\steamapps\common\Derail Valley\DerailValley_Data\Managed\DV.ThingTypes.dll</HintPath>
 		</Reference>
+		<Reference Include="Unity.TextMeshPro">
+		  <HintPath>I:\SteamLibrary\steamapps\common\Derail Valley\DerailValley_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+		</Reference>
 	</ItemGroup>
 
 	<!-- Unity -->

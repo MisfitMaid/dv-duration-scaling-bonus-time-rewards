@@ -1,22 +1,16 @@
 using System;
-using System.Collections.Generic;
 using System.Reflection;
 using HarmonyLib;
 using UnityModManagerNet;
 using DV.Logic.Job;
 using DV.ThingTypes;
-using dnlib;
-using UnityEngine;
-using System.Runtime;
-using System.Runtime.CompilerServices;
-using dnlib.DotNet.Pdb;
 
 namespace ScalingBonusRewards;
 
 [EnableReloading]
 public static class Main
 {
-	public static Settings? settings;
+	public static Settings settings;
 
 	private static bool Load(UnityModManager.ModEntry modEntry)
 	{
@@ -50,7 +44,7 @@ public static class Main
 
 	static void OnSaveGUI(UnityModManager.ModEntry modEntry)
 	{
-		settings?.Save(modEntry);
+		settings.Save(modEntry);
 	}
 
 	static bool Unload(UnityModManager.ModEntry modEntry)
@@ -85,7 +79,9 @@ static class Patch_GetBonusPaymentForTheJob
 		{
 			if (__instance.GetJobCompletionTime() <= __instance.TimeLimit + 60f)
 			{
-				__result = __instance.GetPotentialBonusPaymentForTheJob();
+				float maxBonus = __instance.GetBasePaymentForTheJob() * Main.settings.maxBonusCoef;
+				if (__instance.TimeLimit > 0)
+					__result = maxBonus * (1 - (__instance.GetJobCompletionTime() / __instance.TimeLimit));
 				return;
 			}
 		}
