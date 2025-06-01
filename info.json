@@ -1,9 +1,9 @@
 {
-	"Id": "MOD_NAME",
+	"Id": "ScalingBonusRewards",
 	"Version": "1.0.0",
-	"DisplayName": "MOD_NAME",
-	"Author": "MOD_AUTHOR",
-	"EntryMethod": "MOD_NAME.Main.Load",
+	"DisplayName": "ScalingBonusRewards",
+	"Author": "MisfitMaid",
+	"EntryMethod": "ScalingBonusRewards.Main.Load",
 	"ManagerVersion": "0.27.3",
-	"Repository": "https://raw.githubusercontent.com/OWNER/REPOSITORY/main/repository.json"
+	"Repository": "https://raw.githubusercontent.com/MisfitMaid/dv-duratrion-scaling-bonus-time-rewards/main/repository.json"
 }
